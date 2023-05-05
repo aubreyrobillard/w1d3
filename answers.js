@@ -87,62 +87,62 @@
 // ////////////////////////////////
 // // Methods, Revisited
 // ////////////////////////////////
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
-// Console log: the index of Titanic
-console.log("Index of Titanic:")
-console.log(favMovies.indexOf('Titanic'))
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// // Console log: the index of Titanic
+// console.log("Index of Titanic:")
+// console.log(favMovies.indexOf('Titanic'))
 
-// 1. use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
-console.log("Question 1:")
-favMovies.sort()
- console.log(favMovies)
+// // 1. use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
+// console.log("Question 1:")
+// favMovies.sort()
+//  console.log(favMovies)
 
-// 2. Use the method pop
-console.log("Question 2:")
-favMovies.pop()
-    console.log(favMovies)
+// // 2. Use the method pop
+// console.log("Question 2:")
+// favMovies.pop()
+//     console.log(favMovies)
 
-// 3. push "Guardians of the Galaxy"
-console.log("Question 3:")
-favMovies.push("Guardians of the Galaxy")
-    console.log(favMovies)
+// // 3. push "Guardians of the Galaxy"
+// console.log("Question 3:")
+// favMovies.push("Guardians of the Galaxy")
+//     console.log(favMovies)
 
-// 4. Reverse the array
-console.log("Question 4:")
-favMovies.reverse()
-    console.log(favMovies)
+// // 4. Reverse the array
+// console.log("Question 4:")
+// favMovies.reverse()
+//     console.log(favMovies)
 
-// 5. Use the shift method
-console.log("Question 5:")
-favMovies.shift()
-    console.log(favMovies)
+// // 5. Use the shift method
+// console.log("Question 5:")
+// favMovies.shift()
+//     console.log(favMovies)
 
-// 6. unshift - what does it return?
-console.log("Question 6:")
-favMovies.unshift("Son of Rambow")
-    console.log(favMovies)
+// // 6. unshift - what does it return?
+// console.log("Question 6:")
+// favMovies.unshift("Son of Rambow")
+//     console.log(favMovies)
 
-// 7. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-console.log("Question 7:")
-console.log(favMovies.indexOf("Django Unchained"))
-favMovies.splice(15, 1, "Avatar")
-    console.log(favMovies)
+// // 7. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+// console.log("Question 7:")
+// console.log(favMovies.indexOf("Django Unchained"))
+// favMovies.splice(15, 1, "Avatar")
+//     console.log(favMovies)
 
-// 8. slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
-console.log("Question 8:")
-const middle = (favMovies[Math.floor(favMovies.length / 2)])
-let y = (favMovies.length)
-let x = (favMovies.indexOf(middle)) 
-    console.log(favMovies.slice(x, y))
+// // 8. slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+// console.log("Question 8:")
+// const middle = (favMovies[Math.floor(favMovies.length / 2)])
+// let y = (favMovies.length)
+// let x = (favMovies.indexOf(middle)) 
+//     console.log(favMovies.slice(x, y))
 
-// 9. store the value of your slice in a variable, console.log it - Thought question: what is going on here?
-console.log("Question 9:")
-const sliceValue = (favMovies.slice(x, y))
-console.log(sliceValue)
+// // 9. store the value of your slice in a variable, console.log it - Thought question: what is going on here?
+// console.log("Question 9:")
+// const sliceValue = (favMovies.slice(x, y))
+// console.log(sliceValue)
 
-// 10. console.log your final results
-console.log("Question 10:")
-console.log[favMovies]
+// // 10. console.log your final results
+// console.log("Question 10:")
+// console.log[favMovies]
 
 // After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
 // console.log(favMovies.indexOf["Fast and Furious"])
@@ -152,6 +152,23 @@ console.log[favMovies]
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+console.log("1. Remove Eggbert (hint look at the slice/splice method(s))")
+whereIsWaldo.splice(1, 1)
+    console.log(whereIsWaldo)
+
+console.log("2. Change 'Neff' to 'No One'")
+whereIsWaldo[1].splice(2, 1, "No One")
+console.log(whereIsWaldo)
+
+console.log('3. "Access and console.log "Waldo"')    
+const waldoArray = ((whereIsWaldo[2])[1])
+console.log((waldoArray).pop())                                                  //why wasn't .shift() working here?
+
+
 
 
 ////////////////////////////////
