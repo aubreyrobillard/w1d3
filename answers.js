@@ -19,7 +19,7 @@
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
-//1. Write a javascript application that logs all numbers from 1 - 100.
+// 1. Write a javascript application that logs all numbers from 1 - 100.
 // for (i = 1; i <= 100; i++)
 //     console.log(i)
 
@@ -75,14 +75,78 @@
     // console.log(ninjaTurtles)
 
 // 2. Use a for of loop (not a typo - try it out! Try a for of loop) to call toUpperCase() on each of them and print out the result.
-const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
-for (let i = [0]; i <= 3; i++)
-   console.log(ninjaTurtles[i])
+// const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+// // for (let i = [0]; i <= 3; i++)
+// //    console.log(ninjaTurtles[i])
+
+// //    for (let upperName of ninjaTurtles) {
+// //     console.log(upperName.toUpperCase(), "< question 2")
+// // }
    
 
-////////////////////////////////
-// Methods, Revisited
-////////////////////////////////
+// ////////////////////////////////
+// // Methods, Revisited
+// ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// Console log: the index of Titanic
+console.log("Index of Titanic:")
+console.log(favMovies.indexOf('Titanic'))
+
+// 1. use the .sort method Thought question: what did this do to the array? Did it permanently alter it?
+console.log("Question 1:")
+favMovies.sort()
+ console.log(favMovies)
+
+// 2. Use the method pop
+console.log("Question 2:")
+favMovies.pop()
+    console.log(favMovies)
+
+// 3. push "Guardians of the Galaxy"
+console.log("Question 3:")
+favMovies.push("Guardians of the Galaxy")
+    console.log(favMovies)
+
+// 4. Reverse the array
+console.log("Question 4:")
+favMovies.reverse()
+    console.log(favMovies)
+
+// 5. Use the shift method
+console.log("Question 5:")
+favMovies.shift()
+    console.log(favMovies)
+
+// 6. unshift - what does it return?
+console.log("Question 6:")
+favMovies.unshift("Son of Rambow")
+    console.log(favMovies)
+
+// 7. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+console.log("Question 7:")
+console.log(favMovies.indexOf("Django Unchained"))
+favMovies.splice(15, 1, "Avatar")
+    console.log(favMovies)
+
+// 8. slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+console.log("Question 8:")
+const middle = (favMovies[Math.floor(favMovies.length / 2)])
+let y = (favMovies.length)
+let x = (favMovies.indexOf(middle)) 
+    console.log(favMovies.slice(x, y))
+
+// 9. store the value of your slice in a variable, console.log it - Thought question: what is going on here?
+console.log("Question 9:")
+const sliceValue = (favMovies.slice(x, y))
+console.log(sliceValue)
+
+// 10. console.log your final results
+console.log("Question 10:")
+console.log[favMovies]
+
+// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+// console.log(favMovies.indexOf["Fast and Furious"])
+// This gives us an error codee since Fast and Furious does not exist
 
 
 ////////////////////////////////
@@ -98,3 +162,8 @@ for (let i = [0]; i <= 3; i++)
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+// , "<< What you think will log");
+// put console.log(where is waldo) inside of curly brackets. We'll know which array we're looking at
+
+// ("< question number") at the end of each console.log
