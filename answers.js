@@ -152,28 +152,41 @@
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
-                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
 
-console.log("1. Remove Eggbert (hint look at the slice/splice method(s))")
-whereIsWaldo.splice(1, 1)
-    console.log(whereIsWaldo)
+// console.log("1. Remove Eggbert (hint look at the slice/splice method(s))")
+// whereIsWaldo.splice(1, 1)
+//     console.log(whereIsWaldo)
 
-console.log("2. Change 'Neff' to 'No One'")
-whereIsWaldo[1].splice(2, 1, "No One")
-console.log(whereIsWaldo)
+// console.log("2. Change 'Neff' to 'No One'")
+// whereIsWaldo[1].splice(2, 1, "No One")
+// console.log(whereIsWaldo)
 
-console.log('3. "Access and console.log "Waldo"')    
-const waldoArray = ((whereIsWaldo[2])[1])
-console.log((waldoArray).pop())                                                  //why wasn't .shift() working here?
-
-
+// console.log('3. "Access and console.log "Waldo"')    
+// const waldoArray = ((whereIsWaldo[2])[1])
+// console.log((waldoArray).pop())                                                  //why wasn't .shift() working here?
 
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+console.log("1.Write code that logs 'Love me, pet me! HSSSSSS!' 20 times.")
+for (let c = 1; c <= 20; c++)
+    console.log("Love me, pet me! HSSSSSS!")
+
+console.log('2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.')
+
+const kittyTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+// let meow = (Math.floor(Math.random() * kittyTalk.length))                       Why didn't this work at a variable?
+
+for (let c = 1; c <= 20; c++) {
+    console.log("Love me, pet me! HSSSSSS!")
+    if(c % 2 === 0) {
+        console.log(kittyTalk[(Math.floor(Math.random() * kittyTalk.length))])
+}
+}
 
 
 ////////////////////////////////
